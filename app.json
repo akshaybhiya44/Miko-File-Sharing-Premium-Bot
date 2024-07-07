@@ -73,7 +73,7 @@
       },
       "SECONDS": {
         "description": "auto delete in seconds",
-        "value": "600",
+        "value": "3600",
         "required": false
       }
   },
