@@ -14,22 +14,22 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7314346623:AAGthfZirCo-EUVBkTyp1UOh2BUNVajSosI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 APP_ID = int(os.environ.get("APP_ID", "23873858"))
 API_HASH = os.environ.get("API_HASH", "bfc7ff263795b22bb7065abe95bed3a2")
 
 
-OWNER = os.environ.get("OWNER", "@Patel_080") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "5284816025")) #Owner user id
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://sunitverma080:4LYZiim5L31SCNBz@realfree.3s31w2j.mongodb.net/?retryWrites=true&w=majority&appName=Realfree")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+OWNER = os.environ.get("OWNER", "") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "")
+DB_NAME = os.environ.get("DB_NAME", "FileXShare")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002147039566"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002161248543"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
 
 
-SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
+SECONDS = int(os.getenv("SECONDS", "3600")) # auto delete in seconds
 
 
 
@@ -43,7 +43,7 @@ START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store privat
 
 try:
     ADMINS=[7085541484]
-    for x in (os.environ.get("ADMINS", "5857939104 5284816025 5857939104 7208538115").split()):
+    for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
